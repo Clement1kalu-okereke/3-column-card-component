@@ -18,7 +18,6 @@ body {
 .Card__container {
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
   border-radius: 14px;
   width: 75vw;
 }
@@ -76,26 +75,17 @@ button:hover {
   border: 2px solid white;
   color: var(--Very-light-gray) !important;
 }
-/* .Card__sedans button {
-  color: var(--Bright-Orange);
-}
-.Card__suv button {
-  color: var(--Dark-cyan);
-}
-.Card__luxury button {
-  color: var(--Very-dark-cyan);
-} */
 
 @media (max-width: 375px) {
   .Card__container {
     flex-direction: column;
   }
-  .Card__sedans {
+  .Card__holder.one {
     border-radius: 0;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
   }
-  .Card__luxury {
+  .Card__holder.three {
     border-radius: 0;
     border-bottom-left-radius: 14px;
     border-bottom-right-radius: 14px;
