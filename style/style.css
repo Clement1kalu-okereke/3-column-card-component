@@ -20,28 +20,33 @@ body {
   flex-direction: row;
   /* flex-wrap: wrap; */
   border-radius: 14px;
+  width: 75vw;
 }
-.Card__sedans {
+.Card__holder {
+  padding: 20px;
+  padding-block: 40px;
+}
+.Card__holder.one {
   background-color: var(--Bright-Orange);
   border-top-left-radius: 14px;
   border-bottom-left-radius: 14px;
-  padding: 20px;
-  padding-block: 40px;
 }
-.Card__suv {
+.Card__holder.one button {
+  color: var(--Bright-Orange);
+}
+.Card__holder.two {
   background-color: var(--Dark-cyan);
-  padding: 20px;
-  padding-block: 40px;
 }
-.Card__luxury {
+.Card__holder.two button {
+  color: var(--Dark-cyan);
+}
+.Card__holder.three {
   background-color: var(--Very-dark-cyan);
   border-top-right-radius: 14px;
   border-bottom-right-radius: 14px;
-  padding: 20px;
-  padding-block: 40px;
 }
-.Card__table {
-  display: table;
+.Card__holder.Card__holder.three button {
+  color: var(--Very-dark-cyan);
 }
 h2 {
   color: var(--Very-light-gray);
@@ -71,7 +76,7 @@ button:hover {
   border: 2px solid white;
   color: var(--Very-light-gray) !important;
 }
-.Card__sedans button {
+/* .Card__sedans button {
   color: var(--Bright-Orange);
 }
 .Card__suv button {
@@ -79,7 +84,7 @@ button:hover {
 }
 .Card__luxury button {
   color: var(--Very-dark-cyan);
-}
+} */
 
 @media (max-width: 375px) {
   .Card__container {
